@@ -27,6 +27,22 @@ It combines:
 - AI-based manipulation detection  
 - Interactive analytics dashboard  
 
+### 🧩 Manipulation Detection
+
+- Classifies emotional manipulation patterns Generates explanation + response strategy
+
+### 🧠 RAG-Based Memory System
+
+- Stores interaction history in vector DB Enables semantic retrieval and personalization
+
+### ⚡ Real-Time Processing
+
+- FastAPI backend for scalable inference Low-latency embedding + retrieval pipeline
+
+### 🔁 Adaptive Learning
+
+- Learns from past interactions Improves guidance over time
+
 ---
 
 ## 📊 Dashboard
@@ -49,31 +65,31 @@ It combines:
 ## 🌐 Web Application Architecture
 
 ```text
-User (Web Interface)
-    ↓
-Frontend (HTML / CSS / JS Dashboard)
-    ↓
-API Layer (FastAPI Backend)
-    ↓
-Authentication (Login / Signup)
-    ↓
-Input Handling (Text / Image / Audio / Video)
-    ↓
-Preprocessing (OCR / Transcription / Cleaning)
-    ↓
-AI Engine (LLM + CLIP + Whisper)
-    ↓
-Manipulation Detection (Technique + Confidence + Explanation)
-    ↓
-Embedding Generation (MiniLM)
-    ↓
-Vector Database (Supabase / pgvector)
-    ↓
-RAG Retrieval (Past Context)
-    ↓
-Final Response (Personalized Output)
-    ↓
-Dashboard Visualization
+                    User (Web Interface)
+                            ↓
+                Frontend (HTML / CSS / JS Dashboard)
+                            ↓
+                   API Layer (FastAPI Backend)
+                            ↓
+                 Authentication (Login / Signup)
+                            ↓
+           Input Handling (Text / Image / Audio / Video)
+                            ↓
+           Preprocessing (OCR / Transcription / Cleaning)
+                            ↓
+                AI Engine (LLM + CLIP + Whisper)
+                            ↓
+  Manipulation Detection (Technique + Confidence + Explanation)
+                            ↓
+                Embedding Generation (MiniLM)
+                            ↓
+            Vector Database (Supabase / pgvector)
+                            ↓
+                RAG Retrieval (Past Context)
+                            ↓
+            Final Response (Personalized Output)
+                            ↓
+                  Dashboard Visualization
 ```
 
 ---
@@ -89,31 +105,31 @@ Dashboard Visualization
 ## 🧩 Chrome Extension Architecture
 
 ```text
-User Browsing Webpage
-    ↓
-Chrome Extension (Content Script / Popup)
-    ↓
-Content Extraction
-    ↓
-- Text (DOM Parsing)
-- Images
-- Video / Audio
-    ↓
-Preprocessing
-    ↓
-API Call → FastAPI Backend
-    ↓
-AI Processing (LLM + Multi-Modal Models)
-    ↓
-Manipulation Detection
-    ↓
-Response to Extension
-    ↓
-UI Rendering
-    ↓
-- Highlight Manipulative Content
-- Show Risk Score
-- Mini Dashboard
+            User Browsing Webpage
+                    ↓
+   Chrome Extension (Content Script / Popup)
+                    ↓
+            Content Extraction
+                    ↓
+            - Text (DOM Parsing)
+            - Images
+            - Video / Audio
+                    ↓
+               Preprocessing
+                    ↓
+         API Call → FastAPI Backend
+                    ↓
+    AI Processing (LLM + Multi-Modal Models)
+                    ↓
+            Manipulation Detection
+                    ↓
+            Response to Extension
+                    ↓
+               UI Rendering
+                    ↓
+      - Highlight Manipulative Content
+            - Show Risk Score
+            - Mini Dashboard
 ```
 
 ---
@@ -201,6 +217,36 @@ SSK_SUPABASE_KEY="your_key"
 
 ---
 
+## 🧪 Usage
+
+1. Start the backend server  
+2. Load the browser extension  
+3. Browse social media platforms  
+
+The system will:
+- Extract content  
+- Analyze for manipulation  
+- Store memory  
+- Provide feedback
+
+---
+
+## 🔍 Example Use Case
+
+
+```
+A user views a manipulative post on social media 
+                    ↓
+        Extension extracts content
+                    ↓
+    AI detects guilt-based manipulation 
+                    ↓
+ System retrieves past similar interactions 
+                    ↓
+Provides personalized guidance to the user  
+```
+
+---
 
 ## 🚀 Future Improvements
 - Real-time streaming inference  
